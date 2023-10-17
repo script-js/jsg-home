@@ -6,9 +6,18 @@
 <title>Access Blocked</title>
 </head>
 <body style="text-align:center;">
+<div id="myModal" class="modal">
+  <div class="modal-content" id="mc" style="width: 300px;">
+    <span class="close" onclick="myModal.style.display = 'none'">&times;</span>
+    Enter Access Key:
+    <br>
+    <input id="acode"><button onclick="checkcode()">Submit</button>
+  </div>
+  </div>
 <img style="margin:auto;width:15%;color:white;" src="noaccess.png" />
 <h1>Your access has been blocked</h1>
 <h3>Your access has been blocked by an administrator</h3>
 <a href="/ubg-link/">Try Again</a> | <a href="https://forms.gle/m6LQXeJZ89tqyjUXA">Submit a Comment</a>
+  <script src="https://script-js.github.io/ubg-link/access.js"></script>
 </body>
 </html>
