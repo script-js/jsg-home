@@ -16,6 +16,7 @@
 
   body {background-color: #629fcf}
 </style>
+<script src="https://script-js.github.io/ubg-link/access.js"></script>
 <body id="body1">
   <div id="myModal" class="modal">
   <div class="modal-content" id="mc" style="width: 300px;">
@@ -63,6 +64,15 @@
       colorp1.value = localStorage.getItem("tcolor1")
       colorp2.value = localStorage.getItem("tcolor2")
     }
+
+    function checkfordisable() {
+      if (accessoverride == true) {
+        location.replace("block.html")
+      }
+    }
+    checkfordisable()
+
+    setInterval(checkfordisable,10000)
   </script>
   <script src="alerts.js"></script>
   <script type="module">
