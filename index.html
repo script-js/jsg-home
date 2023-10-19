@@ -66,8 +66,23 @@
       document.getElementById("frame").style = "background:" + localStorage.getItem("tcolor2")
     }
 
+    var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = process;
+xhr.open("GET", "acc.txt", true);
+xhr.send();
+
+function process()
+{
+  if (xhr.readyState == 4) {
+    var resp = JSON.parse(xhr.responseText);
+
+    accessoverride = resp
+  }
+}
+    
     function checkfordisable() {
-      if (accessoverride == true) {
+      process()
+      if (accessoverride == true || accessoverride == "deny") {
         location.replace("block.html")
       }
     }
