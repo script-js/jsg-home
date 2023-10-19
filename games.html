@@ -49,11 +49,10 @@ function removeext(element) {
   localStorage.setItem("extgames",toremove)
   location.reload()
 }
-
     if (localStorage.getItem("tcolor1")) {
-      separator.style.background = localStorage.getItem("tcolor1");
       sbg.style = "height: 400px;position:absolute;left:0px;top:47px;background-image: linear-gradient(" + localStorage.getItem("tcolor1") + ", " + localStorage.getItem("tcolor2") + "); width: 101%;";
       document.body.style.background = localStorage.getItem("tcolor2");
+      separator.style.background = localStorage.getItem("tcolor1");
       sbarbox.style.background = localStorage.getItem("tcolor1");
     }
     
@@ -90,7 +89,6 @@ function readURL(input) {
     fico = "/icon.png";
   }
 }
-
     
     function addGameURL(linkor,title) {
       if (linkor.includes("https://") || linkor.includes("http://")) {
@@ -119,9 +117,7 @@ function readURL(input) {
     } else {
       localStorage.setItem("favbar", "")
     }
-
     
-
     function addFav(element1) {
       console.log(element1)
       var toadd = element1.parentElement.parentElement.innerHTML.replace("container", "container game-tile-lg").replace('href="javascript:console.log(gp)"', 'style="display:none"').replace("game-title", "game-title-lg").replace("game-icon", "game-icon-lg");
