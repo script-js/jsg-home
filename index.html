@@ -34,6 +34,7 @@
   <div id="fsc" style="display:none;text-align: center;"><a href="games.html" target="frame"><button class="fadebtn" title="Back to game library">🏠</button></a><button onclick="showc()" class="fadebtn" title="Show all controls">🎛️</button><br>
   <a href='javascript:localStorage.setItem("amongusinreallife","eee");alert(localStorage.getItem("amongusinreallife"));location.reload()' style="color:#629fcf">Remove Inactivity Popup</a></div>
   <script>
+    eval("var tc2 = '" + localStorage.getItem("tcolor2") + "'")
     function themeSet() {
       localStorage.setItem("tcolor1",document.getElementById("colorp1").value)
       localStorage.setItem("tcolor2",document.getElementById("colorp2").value)
@@ -63,9 +64,9 @@
       document.body.style.backgroundColor = localStorage.getItem("tcolor1")
       colorp1.value = localStorage.getItem("tcolor1")
       colorp2.value = localStorage.getItem("tcolor2")
-      fb1.style.background-color = localStorage.getItem("tcolor2")
-      fb2.style.background-color = localStorage.getItem("tcolor2")
-      fb3.style.background-color = localStorage.getItem("tcolor2")
+      fb1.style.background-color = tc2
+      fb2.style.background-color = tc2
+      fb3.style.background-color = tc2
     }
     
     function checkfordisable() {
