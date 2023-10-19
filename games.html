@@ -113,9 +113,13 @@ function readURL(input) {
     }
     
     if (localStorage.getItem("favbar")) {
-        favorites.innerHTML = localStorage.getItem("favbar")
+      favorites.innerHTML = localStorage.getItem("favbar")
     } else {
       localStorage.setItem("favbar", "")
+      if (localStorage.getItem("tcolor2")) {
+        separator.style.background = localStorage.getItem("tcolor2");
+      } else {
+        separator.style.background = "darkcyan";
     }
     
     function addFav(element1) {
