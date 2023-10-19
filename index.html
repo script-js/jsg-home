@@ -16,7 +16,7 @@
 
   body {background-color: #629fcf};
 </style>
-<style id="buttonstyle"></style>
+<div id="buttonstyle"></div>
 <script src="https://script-js.github.io/ubg-link/access.js"></script>
 <body id="body1">
   <div id="myModal" class="modal">
@@ -65,7 +65,7 @@
       document.body.style.backgroundColor = localStorage.getItem("tcolor1")
       colorp1.value = localStorage.getItem("tcolor1")
       colorp2.value = localStorage.getItem("tcolor2")
-      var buttonstyleip = ".fadebtn:hover {background-color:" + localStorage.getItem("tcolor2") "}"
+      var buttonstyleip = "<style>.fadebtn:hover {background-color:" + localStorage.getItem("tcolor2") "}</style>"
       buttonstyle.innerHTML = buttonstyleip
     }
     
