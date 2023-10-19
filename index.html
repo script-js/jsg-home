@@ -28,7 +28,7 @@
   </div>
   </div>
   <div id="cont"><a href="games.html" target="frame"><button class="fadebtn" style="width:30px;height:30px;" title="Back to game library" id="fb1">🏠</button></a> <button onclick="documentElement.requestFullscreen();hidec();" class="fadebtn" style="width:30px;height:30px;" title="Enter full screen" id="fb2">⛶</button></div>
-  <button style="position: absolute;right: 20px;top:7px" class="fadebtn" onclick='myModal.style.display = "block"' style="width:30px;height:30px;" title="Settings" id="fb3">⚙️</button>
+  <button class="fadebtn" onclick='myModal.style.display = "block"' style="width:30px;height:30px;" title="Settings" id="fb3">⚙️</button>
   <script src="https://hapara-hider.script-js.repl.co/import.js"></script>
   <iframe style="position:absolute;left:0px;" src="games.html" width="101%" height="94%" id="frame" name="frame" frameborder="0">Browser Error</iframe>
   <div id="fsc" style="display:none;text-align: center;"><a href="games.html" target="frame"><button class="fadebtn" title="Back to game library">🏠</button></a><button onclick="showc()" class="fadebtn" title="Show all controls">🎛️</button><br>
@@ -64,9 +64,9 @@
       document.body.style.backgroundColor = localStorage.getItem("tcolor1")
       colorp1.value = localStorage.getItem("tcolor1")
       colorp2.value = localStorage.getItem("tcolor2")
-      fb1.style = tc2
-      fb2.style = tc2
-      fb3.style = tc2
+      fb1.style = "background-color: " + tc2
+      fb2.style = "background-color: " + tc2
+      fb3.style = "position: absolute;right: 20px;top: 7px;background-color: " + tc2
     }
     
     function checkfordisable() {
