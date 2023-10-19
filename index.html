@@ -63,7 +63,9 @@
       document.body.style.backgroundColor = localStorage.getItem("tcolor1")
       colorp1.value = localStorage.getItem("tcolor1")
       colorp2.value = localStorage.getItem("tcolor2")
-      console.log(document.getElementsByClassName("fadebtn")[0].innerHTML)
+      document.getElementsByClassName("fadebtn")[0].style.background-color = localStorage.getItem("tcolor2");
+      document.getElementsByClassName("fadebtn")[1].style.background-color = localStorage.getItem("tcolor2");
+      document.getElementsByClassName("fadebtn")[2].style.background-color = localStorage.getItem("tcolor2");
     }
     
     function checkfordisable() {
