@@ -16,7 +16,10 @@
 </head>
 
 <body>
-  <style>.nobkgh:hover {background:none}</style>
+  <style>
+    .nobgkh {background: rgba(40,37,37,0.7);border: 2px solid lightblue;border-radius: 5px;height: 40px; width: 40px;cursor: pointer;}
+    .nobkgh:hover {background:none}
+  </style>
   <div id="myModal" class="modal">
   <div class="modal-content" id="mc" style="width: 300px;">
     <h3>Add an External Game <span class="close" onclick="myModal.style.display = 'none'">&times;</span></h3>
@@ -35,7 +38,7 @@
   <div class="text-center" id="sbarbox" style="background:#629fcf;position:absolute;left: 0px;top: 0px; width: 100%;">
     <input type="text" class="text-center" id="mySearch" onload="startSearch()" onkeyup="startSearch()"
       placeholder="Search for games..." title="Search" autofocus />
-    <button class="nobkgh" style="background: rgba(40,37,37,0.7);border: 2px solid lightblue;border-radius: 5px;height: 40px; width: 40px;cursor: pointer;" onclick="myModal.style.display = 'block'" title="Add an external game">➕</button>
+    <button class="nobkgh" onclick="myModal.style.display = 'block'" title="Add an external game">➕</button>
     <div style="height: 650px;position:absolute;left:0px;top:47px;background-image: linear-gradient(#629fcf, darkcyan); width: 101%;" id="sbg"></div>
   </div>
   <p>&nbsp;</p>
