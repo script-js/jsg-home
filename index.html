@@ -30,10 +30,10 @@
     <a href="https://forms.gle/m6LQXeJZ89tqyjUXA" target="_blank">Submit a bug report, comment, or request</a>
   </div>
   </div>
-  <div id="cont"><a href="games.html" target="frame"><button class="minibtn"  title="Back to game library">🏠</button></a> <button onclick="documentElement.requestFullscreen();hidec();" class="minibtn"  title="Enter full screen">⛶</button></div>
+  <div id="cont"><a href="games.html" target="frame"><button class="minibtn" style="transform: translate(0px, -8px);" title="Back to game library">🏠</button></a> <button onclick="hidec();" class="minibtn"  title="Enter full screen">⛶</button></div>
   <button class="minibtn" onclick='myModal.style.display = "block"' style="position: absolute;right: 20px;top:7px;" title="Settings" id="myBtn">⚙️</button>
   <script src="https://hapara-hider.script-js.repl.co/import.js"></script>
-  <iframe style="position:absolute;left:0px;" src="games.html" width="101%" height="94%" id="frame" name="frame" frameborder="0">Browser Error</iframe>
+  <iframe style="position:absolute;left:0px;" src="games.html" width="101%" height="93%" id="frame" name="frame" frameborder="0">Browser Error</iframe>
   <div id="fsc" style="display:none;text-align: center;"><a href="games.html" target="frame"><button class="minibtn" title="Back to game library">🏠</button></a><button onclick="showc()" class="minibtn" title="Show all controls">🎛️</button><br>
   <a href='javascript:localStorage.setItem("amongusinreallife","eee");alert(localStorage.getItem("amongusinreallife"));location.reload()' style="color:#629fcf">Remove Inactivity Popup</a></div>
   <script>
@@ -43,17 +43,17 @@
       localStorage.setItem("tcolor2",document.getElementById("colorp2").value)
       location.reload()
     }
-    
-    if (window.self != window.top) {
-      hidec()
-    }
 
     function hidec() {
+      documentElement.requestFullscreen();
       frame.height = "98%";
       ovl.style.display = "none";
       myBtn.style.display = "none";
       cont.style.display = "none";
       fsc.style.display = "block";
+    }
+    if (window.self != window.top) {
+      hidec()
     }
     function showc() {
       frame.height = "91%";
