@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <link href="//js-css.cti.repl.co/styles/darkice.css" rel="stylesheet" type="text/css" />
+  <link href="home.css" rel="stylesheet" type="text/css" />
   <link rel="icon" id='hphficon' href="icon.png"/>
   <title>no games here</title>
 </head>
@@ -14,24 +14,24 @@
     height: 100%;
   }
 
-  .nolink:hover {
-    background:none
+  .hovlink:hover {
+    text-decoration: none;
+    color: black;
+    background: white;
   }
   
-  .minibtn {background: rgba(40,37,37,0.7);border: 2px solid lightblue;border-radius: 5px;height: 40px; width: 40px;cursor: pointer;}
-  .minibtn:hover {background:none}
   body {background-color: #629fcf};
 </style>
 <div id="buttonstyle"></div>
 <script src="https://script-js.github.io/ubg-link/access.js"></script>
 <body id="body1">
   <div id="myModal" class="modal">
-  <div class="modal-content" id="mc" style="width: 300px;">
+  <div class="modal-content" id="mc" style="width: 300px;font-family: 'Roboto', sans-serif;">
     <span class="close" onclick="myModal.style.display = 'none'">&times;</span>
     <div id="hphc"></div>
     Theme: <input id="colorp1" type="color" value="#629FCF"> <input id="colorp2" type="color" value="#008B8B"> <button onclick="themeSet()">Save</button>
     <br>
-    <a href="https://forms.gle/m6LQXeJZ89tqyjUXA" target="_blank">Submit a bug report, comment, or request</a>
+    <a href="https://forms.gle/m6LQXeJZ89tqyjUXA" target="_blank" class="hovlink">Submit a bug report, comment, or request</a>
   </div>
   </div>
   <div id="cont"><a class="nolink" href="games.html" target="frame"><button class="minibtn" style="transform: translate(0px, -2px);" title="Back to game library">🏠</button></a> <button onclick="hidec();" class="minibtn"  title="Enter full screen">⛶</button></div>
@@ -83,31 +83,7 @@
     setTimeout(checkfordisable,1000)
   </script>
   <script src="alerts.js"></script>
-  <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
-  import { getAnalytics } from "firebase/analytics";
-
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyB4vSd--W6roS03eSAHj1Q9nhMQ_bIZTXs",
-    authDomain: "wmhph-857f1.firebaseapp.com",
-    projectId: "wmhph-857f1",
-    storageBucket: "wmhph-857f1.appspot.com",
-    messagingSenderId: "818216015542",
-    appId: "1:818216015542:web:1c777a43812363fd2ef817",
-    measurementId: "G-CKRVZV1L0J"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-
+  <script>
 window.onclick = function(event) {
   if (event.target == myModal) {
     myModal.style.display = "none";
