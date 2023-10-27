@@ -13,6 +13,13 @@
     width: 100%;
     height: 100%;
   }
+
+  .hovlink:hover {
+    text-decoration: none;
+    color: black;
+    background: white;
+  }
+  
   body {background-color: #629fcf};
 </style>
 <div id="buttonstyle"></div>
@@ -24,7 +31,7 @@
     <div id="hphc"></div>
     Theme: <input id="colorp1" type="color" value="#629FCF"> <input id="colorp2" type="color" value="#008B8B"> <button onclick="themeSet()">Save</button>
     <br>
-    <a href="https://forms.gle/m6LQXeJZ89tqyjUXA" target="_blank">Submit a bug report, comment, or request</a>
+    <a href="https://forms.gle/m6LQXeJZ89tqyjUXA" target="_blank" class="hovlink">Submit a bug report, comment, or request</a>
   </div>
   </div>
   <div id="cont"><a class="nolink" href="games.html" target="frame"><button class="minibtn" style="transform: translate(0px, -2px);" title="Back to game library">🏠</button></a> <button onclick="hidec();" class="minibtn"  title="Enter full screen">⛶</button></div>
