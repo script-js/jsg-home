@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
 .minibtn {
   background: rgba(40,37,37,0.7);
   border: 2px solid lightblue;
