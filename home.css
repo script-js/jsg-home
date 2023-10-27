@@ -5,6 +5,29 @@
   color: white;
 }
 
+button {
+    border-radius: 8px;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+    color: white;
+    background-color: #2b2a33;
+    border: 1px solid lightblue;
+  }
+
+  input {
+    border: 1px solid lightblue;
+    border-radius: 8px;
+    background-color: #2b2a33;
+    color: white;
+  }
+
+  select {
+    border: 1px solid lightblue;
+    border-radius: 8px;
+    background-color: #2b2a33;
+    color: white;
+  }
+
 .minibtn {
   background: rgba(40,37,37,0.7);
   border: 2px solid lightblue;
