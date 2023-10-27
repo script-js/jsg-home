@@ -49,7 +49,6 @@
 
     function hidec() {
       frame.height = "98%";
-      ovl.style.display = "none";
       myBtn.style.display = "none";
       cont.style.display = "none";
       fsc.style.display = "block";
@@ -60,8 +59,7 @@
     }
     
     function showc() {
-      frame.height = "91%";
-      ovl.style.display = "block";
+      frame.height = "93%";
       myBtn.style.display = "block";
       cont.style.display = "block";
       fsc.style.display = "none";
@@ -80,16 +78,14 @@
     }
     checkfordisable()
 
-    setTimeout(checkfordisable,1000)
-  </script>
-  <script src="alerts.js"></script>
-  <script>
-window.onclick = function(event) {
-  if (event.target == myModal) {
+    setTimeout(checkfordisable,10000)
+
+    window.onclick = function(event) {
+  if (event.target == document.getElementById("myModal")) {
     myModal.style.display = "none";
   }
 }
-</script>
+  </script>
 </body>
 
 </html>
