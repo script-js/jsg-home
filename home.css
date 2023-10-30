@@ -7,22 +7,21 @@
 
 button {
     border-radius: 8px;
-    border: 1px solid whitesmoke;
     cursor: pointer;
     color: white;
     background-color: #2b2a33;
-    border: 1px solid lightblue;
+    border: 1px solid #00b3b3;
   }
 
   input {
-    border: 1px solid lightblue;
+    border: 1px solid #00b3b3;
     border-radius: 8px;
     background-color: #2b2a33;
     color: white;
   }
 
   select {
-    border: 1px solid lightblue;
+    border: 1px solid #00b3b3;
     border-radius: 8px;
     background-color: #2b2a33;
     color: white;
@@ -30,7 +29,7 @@ button {
 
 .minibtn {
   background: rgba(40,37,37,0.7);
-  border: 2px solid lightblue;
+  border: 2px solid #00b3b3;
   border-radius: 5px;
   height: 40px; 
   width: 40px;
@@ -57,13 +56,13 @@ button {
   background-color: rgba(40,37,37,0.9);
   margin: auto;
   padding: 20px;
-  border: 2px solid lightblue;
+  border: 2px solid #00b3b3;
   width: 80%;
   border-radius: 20px;
 }
 
 .close {
-  color: lightblue;
+  color: #00b3b3;
   float: right;
   font-size: 28px;
   font-weight: bold;
