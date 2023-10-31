@@ -47,3 +47,11 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+.addngbtns {
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  background-color: #2b2a33;
+  border: 1px solid #d97529;
+}
