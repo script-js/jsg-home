@@ -44,6 +44,12 @@
   <p></p>
   <div id="separator"></div>
   <script>
+window.onclick = function(event) {
+  if (event.target == document.getElementById("myModal")) {
+    myModal.style.display = "none";
+  }
+}
+    
 function removeext(element) {
   var e2del = element.getAttribute("name")
   var toremove = localStorage.getItem("extgames").replace('id="' + e2del + '"',"style='display:none;'")
