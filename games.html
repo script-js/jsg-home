@@ -41,7 +41,7 @@
   <p>&nbsp;</p>
   <div id="favorites" class="flex-container"></div>
   <p></p>
-  <div style="width:94%;height:3px;margin:auto;background: #629fcf;position: absolute;" id="separator"></div>
+  <div id="separator"></div>
   <script>
 function removeext(element) {
   var e2del = element.getAttribute("name")
@@ -52,7 +52,6 @@ function removeext(element) {
     if (localStorage.getItem("tcolor1")) {
       sbg.style = "height: 400px;position:absolute;left:0px;top:47px;background-image: linear-gradient(" + localStorage.getItem("tcolor1") + ", " + localStorage.getItem("tcolor2") + "); width: 101%;";
       document.body.style.background = localStorage.getItem("tcolor2");
-      separator.style.background = localStorage.getItem("tcolor1");
       sbarbox.style.background = localStorage.getItem("tcolor1");
     }
     
