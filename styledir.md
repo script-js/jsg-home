@@ -16,3 +16,6 @@
 
 ## Spring/Summer Break
 *#ffcf0d*
+
+## Thanksgiving
+*#bb5d5d*
