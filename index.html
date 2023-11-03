@@ -88,6 +88,12 @@
   }
 }
   </script>
+  <script>
+    if (accessoverride == true) {
+        sessionStorage.setItem("ercode","ERR_ACCESS_BLOCKED")
+        location.replace("block.html")
+      }
+  </script>
 </body>
 
 </html>
