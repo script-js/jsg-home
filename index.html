@@ -74,7 +74,7 @@
     
     function checkfordisable() {
       if (accessoverride == true) {
-        sessionStorage.setItem("ercode","ERR_ACCESS_BLOCKED")
+        sessionStorage.setItem("ercode","ERR_UNIVERSAL_ACCESS_BLOCKED")
         location.replace("block.html")
       }
     }
@@ -90,7 +90,7 @@
   </script>
   <script>
     if (accessoverride == true) {
-        sessionStorage.setItem("ercode","ERR_ACCESS_BLOCKED")
+        sessionStorage.setItem("ercode","ERR_UNIVERSAL_ACCESS_BLOCKED")
         location.replace("block.html")
       }
   </script>
