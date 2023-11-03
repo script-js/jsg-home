@@ -3,7 +3,7 @@
 <head>
 <link href="//js-css.cti.repl.co/styles/darkice.css" rel="stylesheet" />
 <link href="icon.png" rel="icon" />
-<title>Access Blocked</title>
+<title>Access Denied</title>
 </head>
 <body style="text-align:center;">
 <div id="myModal" class="modal">
@@ -15,8 +15,8 @@
   </div>
   </div>
 <img style="margin:auto;width:15%;color:white;" src="noaccess.png" />
-<h1>Your access has been blocked</h1>
-<h3>Your access has been blocked by an administrator</h3>
+<h1>There was an error accessing the site</h1>
+<h3 id="ecodetxt"></h3>
 <a href="/ubg-link/">Try Again</a>
   <p></p>
   <button onclick="myModal.style.display = 'block'" hidden>I have the access override key</button>
@@ -25,6 +25,10 @@
     function access() {
       sessionStorage.setItem("accCode",acode.value)
       location.replace("/ubg-link/")
+    }
+    
+    if (sessionStorage.getItem("ercode")) {
+      ecodetxt.innerHTML = "Error Code: " + sessionStorage.getItem("ercode")
     }
   </script>
 </body>
