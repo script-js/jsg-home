@@ -7,7 +7,7 @@
   <link href="home.css" rel="stylesheet" type="text/css" />
   <link rel="icon" id='hphficon' href="icon.png"/>
   <link href="conclr.css" rel="stylesheet" type="text/css" />
-  <title>no games here</title>
+  <title>jsg</title>
 </head>
 <style>
   html, body {
@@ -74,6 +74,7 @@
     
     function checkfordisable() {
       if (accessoverride == true) {
+        sessionStorage.setItem("ercode","ERR_ACCESS_BLOCKED")
         location.replace("block.html")
       }
     }
