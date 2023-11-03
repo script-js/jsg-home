@@ -32,7 +32,7 @@
     <div id="hphc"></div>
     Background Colors: <input id="colorp1" type="color" value="#629FCF"> <input id="colorp2" type="color" value="#008B8B"> <button onclick="themeSet()">Save</button>
     <br>
-    <a href="jsg-download.zip">Download Website</a> | <a href="https://forms.gle/m6LQXeJZ89tqyjUXA" target="_blank" class="hovlink">Submit a bug report, comment, or request</a>
+    <a href="jsg-download.zip" class="hovlink">Download Website</a> | <a href="https://forms.gle/m6LQXeJZ89tqyjUXA" target="_blank" class="hovlink">Submit a bug report, comment, or request</a>
   </div>
   </div>
   <div id="cont"><a class="nolink" href="games.html" target="frame"><button class="minibtn" style="transform: translate(0px, -1px);" title="Back to game library">🏠</button></a> <button id="myBtn" onclick="documentElement.requestFullscreen(); hidec()" class="minibtn"  title="Enter full screen">⛶</button></div>
@@ -95,7 +95,7 @@
       }
 
     function fAlert() {
-      var altext = "You can now download the game launcher."
+      var altext = "You can now download the game launcher. Find the download link in settings."
       if (localStorage.getItem("nfeature") != altext) {
         alert("ℹ New Feature Avaliable\n" + altext)
         localStorage.setItem("nfeature",altext)
