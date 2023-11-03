@@ -93,6 +93,15 @@
         sessionStorage.setItem("ercode","ERR_UNIVERSAL_ACCESS_BLOCKED")
         location.replace("block.html")
       }
+
+    function fAlert() {
+      var altext = "You can now download the game launcher."
+      if (localStorage.getItem("nfeature") != altext) {
+        alert("ℹ New Feature Avaliable\n" + altext)
+        localStorage.setItem("nfeature",altext)
+      }
+    }
+    fAlert()
   </script>
 </body>
 
