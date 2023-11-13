@@ -1,4 +1,4 @@
-var onlinever = "2";
+var onlinever = "3";
 
 if (onlinever != dlver) {
   var con1 = confirm("There is a new verion avalible. Would you like to download it?")
