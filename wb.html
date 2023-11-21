@@ -1,1 +1,13 @@
-<h2><u>MiniBrowser</u></h2><input id="url1" placeholder="Paste URL"><button onclick="location.replace(url1.value)">Go</button><p><strong>Note:</strong> MiniBrowser is only for Hapara Hider. It is not an unblocker (try glype). Also note that it won't work for all websites, due to security restrictions.</p>
+<!DOCTYPE HTML>
+<style>
+  body {background-color: #1e1e1e; color:whitesmoke;}
+</style>
+<script>
+  function run() {
+    if (url1.value.includes("http") {
+      location.replace(url1.value)
+    } else {
+      location.replace("//" + url1.value)
+    }
+</script>
+<h2><u>MiniBrowser</u></h2><input id="url1" placeholder="Paste URL"><button onclick="run()">Go</button><p><strong>Note:</strong> MiniBrowser is only for Hapara Hider. It is not an unblocker (try glype). Also note that it won't work for all websites, due to security restrictions.</p>
