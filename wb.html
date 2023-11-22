@@ -6,13 +6,6 @@
   body {background-color: #111111; color:whitesmoke;font-family: 'Roboto', sans-serif;text-align:center;}
 </style>
 <script>
-  function run() {
-    if (url1.value.includes("http")) {
-      location.replace(url1.value)
-    } else {
-      location.replace("//" + url1.value)
-    }
-  }
   var loaded1 = false;
   
   function fsize() {
@@ -26,11 +19,11 @@
     }
   }
 </script>
-<h2><u>MiniBrowser</u></h2><input id="url1" placeholder="Paste URL"><button onclick="run()">Go</button><p><strong>Note:</strong> MiniBrowser is only for Hapara Hider. It is not an unblocker (try glype). Also note that it won't work for all websites, due to security restrictions.</p>
+<div style="width:1px;height:115px"></div>
+<h2><u>MiniBrowser</u></h2><p>Type a URL and hit enter</p>
 <iframe src="https://government.fishoho.com/" id="ubframe" frameborder="0" onload="fsize()"></iframe>
 <style>
   #ubframe {
-    display: none;
     position: absolute;
     top:-230px;
     left: 40%;
