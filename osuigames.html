@@ -95,8 +95,8 @@ function readURL(input) {
     }
     
     function addFav(element1) {
-      var title = element1.parentElement.getElementByTagName("h1")[0].innerHTML;
-      var ico = element1.parentElement.getElementByTagName("img")[0].src;
+      var title = element1.parentElement.getElementsByTagName("h1")[0].innerHTML;
+      var ico = element1.parentElement.getElementsByTagName("img")[0].src;
       var link = element1.parentElement.parentElement.href;
       var ta1 = "new WIN('(link)[" + link + "]', '(icn)[" + ico + "]', '(title)[" + title + "]', '(os)[true]', '(full)[false]', '(appname)[" + title + "]', '(oneinst)[yes]');";
       var ta2 = '<div class="deskapp" title="' + title + '" onclick="' + ta1 + '"><img width="38" src="' + ico + '" /></div>'
