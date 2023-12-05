@@ -10,18 +10,18 @@ button {
     cursor: pointer;
     color: white;
     background-color: #2b2a33;
-    border: 1px solid #bb5d5d;
+    border: 1px solid #ff0000;
   }
 
   input {
-    border: 1px solid #bb5d5d;
+    border: 1px solid #ff0000;
     border-radius: 8px;
     background-color: #2b2a33;
     color: white;
   }
 
   select {
-    border: 1px solid #bb5d5d;
+    border: 1px solid #ff0000;
     border-radius: 8px;
     background-color: #2b2a33;
     color: white;
