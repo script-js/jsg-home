@@ -1,4 +1,4 @@
-.minibtn {border: 2px solid #bb5d5d}
+.minibtn {border: 2px solid #ff0000}
 
 #mySearch {
   width: 50%;
@@ -6,7 +6,7 @@
   font-size: 18px;
   padding: 11px;
   font-family: 'Fira Sans', sans-serif;
-  border: 2px solid #bb5d5d;
+  border: 2px solid #ff0000;
   border-radius: 5px;
   background-color: rgb(53, 53, 53)
 }
@@ -29,13 +29,13 @@
   background-color: rgba(40,37,37,0.9);
   margin: auto;
   padding: 20px;
-  border: 2px solid #bb5d5d;
+  border: 2px solid #ff0000;
   width: 80%;
   border-radius: 20px;
 }
 
 .close {
-  color: #bb5d5d;
+  color: #ff0000;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -53,5 +53,5 @@
   cursor: pointer;
   color: white;
   background-color: #2b2a33;
-  border: 1px solid #bb5d5d;
+  border: 1px solid #ff0000;
 }
