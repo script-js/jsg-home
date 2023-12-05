@@ -39,7 +39,7 @@ a {
   background-color: rgba(40,37,37,0.7);
   height: 150px;
   width: 90%;
-  border: 2px solid #bb5d5d;
+  border: 2px solid #00b33e;
   color: #ffffff;
   border-radius: 30px;
   -webkit-animation: scale-down-center 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -112,7 +112,7 @@ a {
   background-color: rgba(40,37,37,0.7);
   height: 400px;
   width: 300px;
-  border: 2px solid #bb5d5d;
+  border: 2px solid #00b33e;
   color: #ffffff;
   border-radius: 30px;
   -webkit-animation: scale-down-center 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -166,7 +166,7 @@ a {
   padding: 10px;
 }
 
-#separator {width:94%;height:3px;margin:auto;background: #bb5d5d;position: absolute;}
+#separator {width:94%;height:3px;margin:auto;background: #00b33e;position: absolute;}
 
 .badge {
   background-color: red;
